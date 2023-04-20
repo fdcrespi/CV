@@ -1,0 +1,75 @@
+{
+  "Idiom": "Español",
+  "personalDate": {
+    "Title": "Datos Personales",
+    "Name": "Crespi Federico",
+    "Birthdate": "18/08/1990",
+    "Adress": {
+      "Name": "Tacuari",
+      "Number": "354",
+      "City": "Tres Arroyos",
+      "Country": "Argentina"
+    },
+    "Phone": "54 9 2983 655609",
+    "Email": "fdcrespi@gmail.com" 
+  },
+  "languajes": [
+    {
+      "Name": "Español",
+      "Level": 5
+    },
+    {
+      "Name": "Inglés",
+      "Level": 2
+    }
+  ],
+  "ResumeStudy": "Soy Técnico Universitario en Desarrollo de Aplicaciones Informáticas, graduado en la Universidad Nacional del Centro (UNICEN, Buenos Aires, Argentina), con ganas de aprender y crecer en el ámbito laboral. Me gusta trabajar en equipo y aprender de los demás. Me considero una persona responsable y con muchas ganas de trabajar.",
+  "Education": {
+    "title": "Educación",
+    "studies": [
+      {
+        "Name": "Técnico Universitario en Desarrollo de Aplicaciones Informáticas",
+        "Institution": "Universidad Nacional del Centro (UNICEN)",
+        "Date": "2020 - 2022",
+        "Status": "Graduado"
+      },
+      {
+        "Name": "Analista Programador Universitario",
+        "Institution": "Universidad Nacional de La Plata (UNLP)",
+        "Date": "2009 - 2015",
+        "Status": "Incompleta"
+      },
+      {
+        "Name": "Bachillerato en Ciencias Económicas",
+        "Institution": "Instituto Secundario Claromecó",
+        "Date": "2005 - 2008",
+        "Status": "Graduado"
+      }
+    ]
+  },
+  "Job": {
+    "title": "Experiencia Laboral",
+    "jobs": [
+      {
+        "Name": "Desarrollador Web Full Stack",
+        "Institution": "CELTA - Tres Arroyos",
+        "Date": "2020 - 2023"
+      },
+      {
+        "Name": "Administrativo en RRHH",
+        "Institution": "CELTA - Tres Arroyos",
+        "Date": "09/2015 - 06/2022"
+      },
+      {
+        "Name": "Administrativo contable",
+        "Institution": "CELTA - Tres Arroyos",
+        "Date": "06/2013 - 02/2015"
+      },
+      {
+        "Name": "Administrador de Base de datos",
+        "Institution": "CELTA - Tres Arroyos",
+        "Date": "04/2012 - 05/2013"
+      }
+    ]
+  }
+}

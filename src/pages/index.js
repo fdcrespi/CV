@@ -1,17 +1,15 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import { List, ListItem, ListItemAvatar, ListItemText } from '@mui/material'
 
-import PersonIcon from '@mui/icons-material/Person';
-import EventIcon from '@mui/icons-material/Event';
-import SmartphoneIcon from '@mui/icons-material/Smartphone';
-import EmailIcon from '@mui/icons-material/Email';
+import LanguajeSelector from '../../components/LanguajeSelector'
+import PersonalDate from '../../components/PersonalDate'
+import Resume from '../../components/Resume'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home(props) {
+  const { data } = props;
   return (
     <>
       <Head>
@@ -21,49 +19,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.personalDate}>
-          <div className={styles.contentImageProfile}>
-            <Image className={styles.imageProfile} src="/profile.jpg" alt="profile" width={200} height={200} />
-          </div>
-          <div className={styles.contentDate}>
-            <h1 className={styles.name}>Detalles</h1>
-            <h1>Personales</h1>
-            <List>
-              <ListItem>
-                <ListItemAvatar>
-                  <PersonIcon />
-                </ListItemAvatar>
-                <ListItemText primary="Nombre" secondary="Crespi Federico" />
-              </ListItem>
-              <ListItem>
-                <ListItemAvatar>
-                  <EventIcon />
-                </ListItemAvatar>
-                <ListItemText primary="Fecha Nacimiento" secondary="18/08/1990" />
-              </ListItem>
-              <ListItem>
-                <ListItemAvatar>
-                  <SmartphoneIcon />
-                </ListItemAvatar>
-                <ListItemText primary="Telefono" secondary="54 2983 655609" />
-              </ListItem>
-              <ListItem>
-                <ListItemAvatar>
-                  <EmailIcon />
-                </ListItemAvatar>
-                <ListItemText primary="Email" secondary="fdcrespi@gmail.com" />
-              </ListItem>
-            </List>
-          </div>
-          <div className={styles.contentIdiom}>
-            <h1>Idiomas</h1>
-          </div>
-        
-        </div>
-        <div className={styles.resumeDate}>
-
-        </div>
+        <LanguajeSelector data={data.Idiom} />
+        <PersonalDate data={data.personalDate} lang={data.languajes} idiom={data.Idiom} />
+        <Resume name={data.personalDate.Name} resume={data.ResumeStudy} study={data.Education} works={data.Job} />
       </main>
     </>
   )
+}
+
+
+export async function getStaticProps({ locale }) {
+  const response = await import(`../../lang/${locale}.json`)
+
+  return {
+    props: {
+      data: response.default
+    },
+  }
 }

@@ -1,0 +1,99 @@
+{
+  "Idiom": "English",
+  "personalDate": {
+    "Title": "Personal Date",
+    "Name": "Crespi Federico",
+    "Birthdate": "18/08/1990",
+    "Adress": {
+      "Name": "Tacuari",
+      "Number": "354",
+      "City": "Tres Arroyos",
+      "Country": "Argentina"
+    },
+    "Phone": "54 9 2983 655609",
+    "Email": "fdcrespi@gmail.com" 
+  },
+  "languajes": [
+    {
+      "Name": "Spanish",
+      "Level": 5
+    },
+    {
+      "Name": "English",
+      "Level": 2
+    }
+  ],
+  "ResumeStudy": "I am a University Technician in Computer Application Development, graduated from the Universidad Nacional del Centro (UNICEN, Buenos Aires, Argentina), eager to learn and grow in the workplace. I like to work in a team and learn from others. I consider myself a responsible person and eager to work.",
+  "Education": {
+    "title": "Education",
+    "studies": [
+      {
+        "Name": "University Technician in Computer Application Development",
+        "Institution": "Universidad Nacional del Centro (UNICEN)",
+        "Date": "2020 - 2022",
+        "Status": "Completed"
+      },
+      {
+        "Name": "University Programmer Analyst",
+        "Institution": "Universidad Nacional de La Plata (UNLP)",
+        "Date": "2009 - 2015",
+        "Status": "Incomplete"
+      },
+      {
+        "Name": "Bachelor of Economics",
+        "Institution": "Instituto Secundario Claromecó",
+        "Date": "2005 - 2008",
+        "Status": "Completed"
+      }
+    ]
+  },
+  "Job": {
+    "title": "Work Experience",
+    "jobs": [
+      {
+        "Name": "Full Stack Web Developer",
+        "Institution": "CELTA - Tres Arroyos",
+        "Date": "07/2022 - 2023"
+      },
+      {
+        "Name": "HR administrative",
+        "Institution": "CELTA - Tres Arroyos",
+        "Date": "03/2015 - 06/2022"
+      },
+      {
+        "Name": "Accounting administrative",
+        "Institution": "CELTA - Tres Arroyos",
+        "Date": "06/2013 - 02/2015"
+      },
+      {
+        "Name": "Database administration",
+        "Institution": "CELTA - Tres Arroyos",
+        "Date": "04/2012 - 05/2013"
+      }
+    ]
+  },
+  "skill": {
+    "title": "Skills",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PHP",
+      "MySQL",
+      "Git",
+      "Bootstrap",
+      "React",
+      "NodeJS",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "Jest",
+      "Mocha",
+      "Chai",
+      "Joi",
+      "Swagger",
+      "Docker",
+      "AWS"      
+    ]
+  }
+}
