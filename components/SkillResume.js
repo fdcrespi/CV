@@ -1,48 +1,40 @@
-import { Avatar, Grid, List, ListItem, ListItemAvatar, ListItemText, Typography } from "@mui/material";
-import { styled } from '@mui/material/styles';
+import { Avatar, Grid, List, ListItem, ListItemAvatar, ListItemText, Rating, Typography } from "@mui/material";
 
 import FolderIcon from '@mui/icons-material/Folder';
-import { cloneElement, useState } from "react";
 
-function generate(element) {
-  return [0, 1, 2].map((value) =>
-    cloneElement(element, {
-      key: value,
-    }),
-  );
-}
+import HtmlIcon from '@mui/icons-material/Html';
+import CssIcon from '@mui/icons-material/Css';
+import JavascriptIcon from '@mui/icons-material/Javascript';
+import PhpIcon from '@mui/icons-material/Php';
+import Image from "next/image";
 
-const Demo = styled('div')(({ theme }) => ({
-  backgroundColor: theme.palette.background.paper,
-}));
-
-export default function SkillResume() {
-
-  const [dense, setDense] = useState(false);
-  const [secondary, setSecondary] = useState(false);
+export default function SkillResume({skill}) {
 
   return (
     <Grid item xs={12} md={6}>
-      <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
-        Avatar with text
+      <Typography sx={{ mt: 2}} variant="h6" component="div">
+        {skill.title}
       </Typography>
-      <Demo>
-        <List dense={dense}>
-          {generate(
-            <ListItem>
-              <ListItemAvatar>
-                <Avatar>
-                  <FolderIcon />
-                </Avatar>
-              </ListItemAvatar>
-              <ListItemText
-                primary="Single-line item"
-                secondary={secondary ? 'Secondary text' : null}
-              />
-            </ListItem>,
-          )}
-        </List>
-      </Demo>
+     
+      <List>
+        {
+          skill.skills.map((i) => {
+            return (
+              <ListItem key={i.Name}>
+                <ListItemAvatar>
+                  <Avatar sx={{background: 'transparent'}}>
+                    <Image src={i.Icon} alt={i.Name} width={30} height={30} />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText
+                  primary={i.Name}
+                  secondary= {<Rating name="size-small" defaultValue={i.Level} size="small" />}
+                />
+              </ListItem>
+            )
+          })
+        }
+      </List>
     </Grid>
   )
 }

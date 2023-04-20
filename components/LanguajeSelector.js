@@ -25,7 +25,6 @@ export default function LanguajeSelector(data) {
         zIndex: 1,
         backgroundColor: "white",
         color: "black",
-        
         border: "1px solid black",
         borderLeft: "none",
         borderRight: "none",

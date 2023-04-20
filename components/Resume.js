@@ -5,7 +5,7 @@ import StudyResume from './StudyResume'
 import WorkResume from './WorkResume'
 import SkillResume from './SkillResume'
 
-export default function Resume({name, resume, study, works}) {
+export default function Resume({name, resume, study, works, skill}) {
   return (
     <div className={styles.resumeDate}>
       <HeaderResume name={name} resume={resume} />
@@ -14,7 +14,7 @@ export default function Resume({name, resume, study, works}) {
       <Divider />
       <WorkResume works={works} />
       <Divider />
-      <SkillResume />
+      <SkillResume skill={skill}/>
     </div>
   )
 }

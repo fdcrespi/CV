@@ -21,7 +21,7 @@ export default function Home(props) {
       <main className={styles.main}>
         <LanguajeSelector data={data.Idiom} />
         <PersonalDate data={data.personalDate} lang={data.languajes} idiom={data.Idiom} />
-        <Resume name={data.personalDate.Name} resume={data.ResumeStudy} study={data.Education} works={data.Job} />
+        <Resume name={data.personalDate.Name} resume={data.ResumeStudy} study={data.Education} works={data.Job} skill={data.skill}/>
       </main>
     </>
   )
