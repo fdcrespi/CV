@@ -3,6 +3,7 @@ import { Divider } from '@mui/material'
 import HeaderResume from './HeaderResume'
 import StudyResume from './StudyResume'
 import WorkResume from './WorkResume'
+import SkillResume from './SkillResume'
 
 export default function Resume({name, resume, study, works}) {
   return (
@@ -12,6 +13,8 @@ export default function Resume({name, resume, study, works}) {
       <StudyResume study={study} />
       <Divider />
       <WorkResume works={works} />
+      <Divider />
+      <SkillResume />
     </div>
   )
 }

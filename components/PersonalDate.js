@@ -12,7 +12,7 @@ export default function PersonalDate({data, lang, idiom}) {
   return (
     <div className={styles.personalDate}>
       <div className={styles.contentImageProfile}>
-        <Image className={styles.imageProfile} src="/profile1.jpg" alt="profile" width={200} height={200} />
+        <Image className={styles.imageProfile} src="/profile.jpg" alt="profile" width={200} height={200} />
       </div>
       <div className={styles.contentDate}>
         <Typography variant="h5" component="div" gutterBottom sx={{marginBottom: 0}}>
