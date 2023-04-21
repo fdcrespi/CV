@@ -2,7 +2,10 @@
   "name": "cv",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://fdcrespi.gothub.io/cv",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -15,6 +18,7 @@
     "@mui/icons-material": "^5.11.16",
     "@mui/lab": "^5.0.0-alpha.127",
     "@mui/material": "^5.12.1",
+    "gh-pages": "^5.0.0",
     "next": "13.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
