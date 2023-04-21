@@ -2,7 +2,7 @@
   "name": "cv",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://fdcrespi.gothub.io/cv",
+  "homepage": "http://fdcrespi.github.io/CV",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
