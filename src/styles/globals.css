@@ -110,3 +110,12 @@ a {
     color-scheme: dark;
   }
 }
+
+
+@media print {
+  body, html {
+    height: auto;
+    background: rgb(var(--background-start-rgb));
+    overflow: hidden;
+  }
+}

@@ -7,17 +7,29 @@ import FileCopyIcon from '@mui/icons-material/FileCopyOutlined';
 import SaveIcon from '@mui/icons-material/Save';
 import PrintIcon from '@mui/icons-material/Print';
 import ShareIcon from '@mui/icons-material/Share';
+import Link from 'next/link';
+import styles from '@/styles/Home.module.css';
 
 const actions = [
   { icon: <FileCopyIcon />, name: 'Copy' },
   { icon: <SaveIcon />, name: 'Save' },
-  { icon: <PrintIcon />, name: 'Print' },
-  { icon: <ShareIcon />, name: 'Share' },
+  { 
+    icon: <Link href="javascript:window.print()" className={styles.buttonPrint}><PrintIcon /></Link>, 
+    name: 'Print' 
+  }
 ];
+
+/* 
+,
+  { 
+    icon: <Link href="whatsapp://send?text=CV%20http://localhost:3000" className={styles.buttonPrint}><ShareIcon /></Link>,
+    name: 'Share'
+  }
+*/
 
 export default function ShareSpeedDial() {
   return (
-    <Box sx={{ height: '100vh', transform: 'translateZ(0px)', flexGrow: 1, zIndex: 1 }}>
+    <Box sx={{ height: '100vh', transform: 'translateZ(0px)', flexGrow: 1, zIndex: 1 }} className={styles.ShareSpeedDial}>
       <SpeedDial
         ariaLabel="SpeedDial basic example"
         sx={{ position: 'fixed', bottom: 16, right: 20 }}

@@ -21,19 +21,19 @@ export default function PersonalDate({data, lang, idiom}) {
         </Typography>
         <List dense>
           <ListItem>
-            <ListItemAvatar>
+            <ListItemAvatar sx={{minWidth: '40px'}}>
               <PersonIcon />
             </ListItemAvatar>
             <ListItemText primary= {data.Name} />
           </ListItem>
           <ListItem>
-            <ListItemAvatar>
+            <ListItemAvatar sx={{minWidth: '40px'}}>
               <EventIcon />
             </ListItemAvatar>
             <ListItemText primary={data.Birthdate} />
           </ListItem>
           <ListItem>
-            <ListItemAvatar>
+            <ListItemAvatar sx={{minWidth: '40px'}}>
               <SmartphoneIcon />
             </ListItemAvatar>
             <Link href='tel:+5492983655609' underline='none' color='inherit'>
@@ -41,7 +41,7 @@ export default function PersonalDate({data, lang, idiom}) {
             </Link>
           </ListItem>
           <ListItem>
-            <ListItemAvatar>
+            <ListItemAvatar sx={{minWidth: '40px'}}>
               <WhatsAppIcon />
             </ListItemAvatar>
             <Link href='https://wa.me/5492983655609' underline='none' color='inherit' target='_blank'> 
@@ -50,7 +50,7 @@ export default function PersonalDate({data, lang, idiom}) {
           </ListItem>
           <ListItem>
             <Link href="mailto:fdcrespi@gmail.com" underline='none' color='inherit' sx={{display: 'flex'}}>
-              <ListItemAvatar>
+              <ListItemAvatar sx={{minWidth: '40px'}}>
                 <EmailIcon />
               </ListItemAvatar>
               <ListItemText primary={data.Email} />
@@ -67,7 +67,7 @@ export default function PersonalDate({data, lang, idiom}) {
           {lang.map((e) => (
             <ListItem key={e.Name} sx={{display: 'flex', justifyContent: 'space-around'}}>
               <Typography component="legend" sx={{width: 60}}>{e.Name}</Typography>
-              <Rating name="read-only" value={e.Level} readOnly />
+              <Rating sx={{fontSize: '20px'}} name="read-only" value={e.Level} readOnly />
             </ListItem>
           ))}
         </List>

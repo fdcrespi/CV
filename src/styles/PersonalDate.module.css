@@ -29,3 +29,11 @@
 .contentIdiom {
   margin-top: 20px;
 }
+
+@media print {
+  .personalDate {
+    background-color: rgb(var(--background-start-rgb));
+    color: rgb(var(--foreground-rgb));
+    grid-row: 1 / 4 !important;
+  }
+}

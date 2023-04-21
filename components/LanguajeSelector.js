@@ -1,5 +1,6 @@
 import { MenuItem, Select } from "@mui/material";
 import { useRouter } from "next/router";
+import styles from "@/styles/LanguajeSelector.module.css";
 
 
 export default function LanguajeSelector(data) {
@@ -12,6 +13,7 @@ export default function LanguajeSelector(data) {
 
   return (
     <Select
+      className={styles.selectIdiom}
       labelId="demo-select-small-label"
       id="demo-select-small"
       value={data.data === "English" ? "en" : "es"}
@@ -31,7 +33,7 @@ export default function LanguajeSelector(data) {
         borderBottom: "none",
         boxShadow: "0 0 10px 0px black",
         padding: "0 10px",
-        margin: "10px",
+        margin: "10px 20px 16px 16px",
         "&:hover": {
           backgroundColor: "white",
           color: "black",

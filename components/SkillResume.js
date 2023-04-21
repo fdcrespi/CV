@@ -11,7 +11,7 @@ import Image from "next/image";
 export default function SkillResume({skill}) {
 
   return (
-    <Container>
+    <Container sx={{padding: 0}}>
       <Typography sx={{ mt: 2}} variant="h6" component="div">
         {skill.title}
       </Typography>
@@ -19,7 +19,7 @@ export default function SkillResume({skill}) {
         {
           skill.skills.map((i) => {
             return (
-              <Grid item xs={12} sm={6} md={3}>
+              <Grid item xs={6} sm={6} md={3}>
                 <ListItem key={i.Name} sx={{padding: 0}}>
                   <Avatar sx={{background: 'transparent'}}>
                     <Image src={i.Icon} alt={i.Name} width={20} height={20} />

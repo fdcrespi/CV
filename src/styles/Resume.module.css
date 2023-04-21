@@ -3,5 +3,14 @@
   background-color: var(--secondary-glow);
   flex-grow: 6;
   padding: 2rem;
-  overflow: overlay;
+  overflow: scroll;
+}
+
+@media print {
+  .resumeDate {
+    height: auto;
+    background-color: rgb(var(--background-start-rgb));
+    overflow: hidden;
+    grid-row: 1 / 4 !important;
+  }
 }

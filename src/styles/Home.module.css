@@ -7,3 +7,19 @@
   overflow: hidden;
 }
 
+/* SpeedDial */
+
+.buttonPrint {
+  display: flex;
+  align-items: center;
+}
+
+@media print {
+  .ShareSpeedDial {
+    display: none;
+  }
+
+  .main {
+    display: grid !important;
+  }
+}
