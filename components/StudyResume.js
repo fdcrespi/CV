@@ -22,7 +22,7 @@ export default function StudyResume({study}) {
       </TimelineItem>
 
       {study.studies.map((item) => (
-        <TimelineItem sx={{ "&::before": {display: 'none'} }}>
+        <TimelineItem key={item.Name} sx={{ "&::before": {display: 'none'} }}>
           <TimelineSeparator>
             <TimelineDot />
             <TimelineConnector />
@@ -32,7 +32,7 @@ export default function StudyResume({study}) {
                 <Grid sx={{marginRight: 2}}>
                   {item.Date}
                 </Grid>
-                <Grid container xs={10} sx={{display: 'flex', flexDirection: 'column'}}>
+                <Grid container sx={{display: 'flex', flexDirection: 'column'}}>
                     <Typography variant="body2"  sx={{fontWeight: 'bold'}}>
                       {item.Name}
                     </Typography>

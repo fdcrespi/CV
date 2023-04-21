@@ -21,17 +21,15 @@ export default function SkillResume({skill}) {
             return (
               <Grid item xs={12} sm={6} md={3}>
                 <ListItem key={i.Name} sx={{padding: 0}}>
-                  <ListItemAvatar>
-                    <Avatar sx={{background: 'transparent'}}>
-                      <Image src={i.Icon} alt={i.Name} width={20} height={20} />
-                    </Avatar>
-                  </ListItemAvatar>
+                  <Avatar sx={{background: 'transparent'}}>
+                    <Image src={i.Icon} alt={i.Name} width={20} height={20} />
+                  </Avatar>
                   <ListItemText
                     primary={i.Name}
                     secondary= {<Rating name="size-small" defaultValue={i.Level} size="small" readOnly />}
                     primaryTypographyProps={{fontSize: 14}}
                     secondaryTypographyProps={{fontSize: 12}}
-                  />
+                    />
                 </ListItem>
               </Grid>
             )

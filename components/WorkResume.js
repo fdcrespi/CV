@@ -26,17 +26,17 @@ export default function WorkResume({works}) {
       </TimelineItem>
 
       {works.jobs.map((item) => (
-        <TimelineItem sx={{"&::before": {display: 'none'} }}>
+        <TimelineItem key={item.Name} sx={{"&::before": {display: 'none'} }}>
           <TimelineSeparator >
             <TimelineDot />
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent sx={{ flex: 'none' }}>
               <Grid container>
-                <Grid sx={{marginRight: 2}}>
+                <Grid item sx={{marginRight: 2}}>
                   {item.Date}
                 </Grid>
-                <Grid container xs={10} sx={{display: 'flex', flexDirection: 'column'}}>
+                <Grid item container xs={10} sx={{display: 'flex', flexDirection: 'column'}}>
                     <Typography variant="body2"  sx={{fontWeight: 'bold'}}>
                       {item.Name}
                     </Typography>

@@ -5,6 +5,9 @@ import styles from '@/styles/Home.module.css'
 import LanguajeSelector from '../../components/LanguajeSelector'
 import PersonalDate from '../../components/PersonalDate'
 import Resume from '../../components/Resume'
+import { Grid } from '@mui/material'
+import ShareSpeedDial from '../../components/ShareSpeedDial'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,11 +21,12 @@ export default function Home(props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <Grid container className={styles.main}>
         <LanguajeSelector data={data.Idiom} />
         <PersonalDate data={data.personalDate} lang={data.languajes} idiom={data.Idiom} />
         <Resume name={data.personalDate.Name} resume={data.ResumeStudy} study={data.Education} works={data.Job} skill={data.skill}/>
-      </main>
+        <ShareSpeedDial />
+      </Grid>
     </>
   )
 }

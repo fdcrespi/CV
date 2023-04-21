@@ -1,7 +1,7 @@
 .resumeDate {
-  min-height: 100vh;
+  height: 100vh;
   background-color: var(--secondary-glow);
   flex-grow: 6;
   padding: 2rem;
-  overflow: scroll;
+  overflow: overlay;
 }
