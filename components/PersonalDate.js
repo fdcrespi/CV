@@ -1,18 +1,19 @@
 import styles from '@/styles/PersonalDate.module.css'
-import { Divider, List, ListItem, ListItemAvatar, ListItemText, Rating, Typography } from '@mui/material'
+import { Divider, Link, List, ListItem, ListItemAvatar, ListItemText, Rating, Typography } from '@mui/material'
 import Image from 'next/image'
 
 import PersonIcon from '@mui/icons-material/Person';
 import EventIcon from '@mui/icons-material/Event';
 import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import EmailIcon from '@mui/icons-material/Email';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export default function PersonalDate({data, lang, idiom}) {
 
   return (
     <div className={styles.personalDate}>
       <div className={styles.contentImageProfile}>
-        <Image className={styles.imageProfile} src="/profile.jpg" alt="profile" width={200} height={200} />
+        <Image className={styles.imageProfile} src="/profile1.jpg" alt="profile" width={200} height={200} />
       </div>
       <div className={styles.contentDate}>
         <Typography variant="h5" component="div" gutterBottom sx={{marginBottom: 0}}>
@@ -35,13 +36,25 @@ export default function PersonalDate({data, lang, idiom}) {
             <ListItemAvatar>
               <SmartphoneIcon />
             </ListItemAvatar>
-            <ListItemText primary={data.Phone} />
+            <Link href='tel:+5492983655609' underline='none' color='inherit'>
+              <ListItemText primary={data.Phone} />
+            </Link>
           </ListItem>
           <ListItem>
             <ListItemAvatar>
-              <EmailIcon />
+              <WhatsAppIcon />
             </ListItemAvatar>
-            <ListItemText primary={data.Email} />
+            <Link href='https://wa.me/5492983655609' underline='none' color='inherit' target='_blank'> 
+              <ListItemText primary={data.Phone} />
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="mailto:fdcrespi@gmail.com" underline='none' color='inherit' sx={{display: 'flex'}}>
+              <ListItemAvatar>
+                <EmailIcon />
+              </ListItemAvatar>
+              <ListItemText primary={data.Email} />
+            </Link>
           </ListItem>
         </List>
       </div>

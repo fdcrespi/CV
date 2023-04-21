@@ -106,21 +106,6 @@
         "Icon": "/iconSkills/nodejs.png"
       },
       {
-        "Name": "MySQL",
-        "Level": 4,
-        "Icon": "/iconSkills/mysql.png"
-      },
-      {
-        "Name": "Git",
-        "Level": 3,
-        "Icon": "/iconSkills/git.png"
-      },
-      {
-        "Name": "Bootstrap",
-        "Level": 3,
-        "Icon": "/iconSkills/bootstrap.png"
-      },
-      {
         "Name": "React",
         "Level": 2,
         "Icon": "/iconSkills/react.png"
@@ -131,10 +116,25 @@
         "Icon": "/iconSkills/nextjs.png"
       },
       {
+        "Name": "Bootstrap",
+        "Level": 3,
+        "Icon": "/iconSkills/bootstrap.png"
+      },
+      {
         "Name": "Express",
         "Level": 2,
         "Icon": "/iconSkills/express.png"
       },
+      {
+        "Name": "MySQL",
+        "Level": 4,
+        "Icon": "/iconSkills/mysql.png"
+      },
+      {
+        "Name": "Firebase",
+        "Level": 3,
+        "Icon": "/iconSkills/firebase.png"
+      },   
       {
         "Name": "MongoDB",
         "Level": 2,
@@ -146,9 +146,14 @@
         "Icon": "/iconSkills/mongoose.png"
       },
       {
-        "Name": "Swagger",
+        "Name": "Git",
         "Level": 4,
-        "Icon": "/iconSkills/swagger.png"
+        "Icon": "/iconSkills/git.png"
+      },
+      {
+        "Name": "GitHub",
+        "Level": 3,
+        "Icon": "/iconSkills/github.png"
       },
       {
         "Name": "Docker",
@@ -166,6 +171,11 @@
         "Icon": "/iconSkills/postman.png"
       },
       {
+        "Name": "Swagger",
+        "Level": 4,
+        "Icon": "/iconSkills/swagger.png"
+      },
+      {
         "Name": "Linux",
         "Level": 3,
         "Icon": "/iconSkills/linux.png"
@@ -174,7 +184,7 @@
         "Name": "Windows",
         "Level": 5,
         "Icon": "/iconSkills/windows.png"
-      }    
+      } 
 
     ]
   }

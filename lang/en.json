@@ -73,27 +73,119 @@
     ]
   },
   "skill": {
-    "title": "Skills",
+    "title": "Habilidades",
     "skills": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "PHP",
-      "MySQL",
-      "Git",
-      "Bootstrap",
-      "React",
-      "NodeJS",
-      "Express",
-      "MongoDB",
-      "Mongoose",
-      "Jest",
-      "Mocha",
-      "Chai",
-      "Joi",
-      "Swagger",
-      "Docker",
-      "AWS"      
+      {
+        "Name": "HTML",
+        "Level": 5,
+        "Icon": "/iconSkills/html.png"
+      },
+      {
+        "Name": "CSS",
+        "Level": 4,
+        "Icon": "/iconSkills/css.png"
+      },
+      {
+        "Name": "JavaScript",
+        "Level": 4,
+        "Icon": "/iconSkills/js.png"
+      },
+      {
+        "Name": "PHP",
+        "Level": 3,
+        "Icon": "/iconSkills/php.png"
+      },
+      {
+        "Name": "Java",
+        "Level": 3,
+        "Icon": "/iconSkills/java.png"
+      },
+      {
+        "Name": "Nodejs",
+        "Level": 3,
+        "Icon": "/iconSkills/nodejs.png"
+      },
+      {
+        "Name": "React",
+        "Level": 2,
+        "Icon": "/iconSkills/react.png"
+      },
+      {
+        "Name": "Nextjs",
+        "Level": 4,
+        "Icon": "/iconSkills/nextjs.png"
+      },
+      {
+        "Name": "Bootstrap",
+        "Level": 3,
+        "Icon": "/iconSkills/bootstrap.png"
+      },
+      {
+        "Name": "Express",
+        "Level": 2,
+        "Icon": "/iconSkills/express.png"
+      },
+      {
+        "Name": "MySQL",
+        "Level": 4,
+        "Icon": "/iconSkills/mysql.png"
+      },
+      {
+        "Name": "Firebase",
+        "Level": 3,
+        "Icon": "/iconSkills/firebase.png"
+      },   
+      {
+        "Name": "MongoDB",
+        "Level": 2,
+        "Icon": "/iconSkills/mongodb.png"
+      },
+      {
+        "Name": "Mongoose",
+        "Level": 2,
+        "Icon": "/iconSkills/mongoose.png"
+      },
+      {
+        "Name": "Git",
+        "Level": 4,
+        "Icon": "/iconSkills/git.png"
+      },
+      {
+        "Name": "GitHub",
+        "Level": 3,
+        "Icon": "/iconSkills/github.png"
+      },
+      {
+        "Name": "Docker",
+        "Level": 3,
+        "Icon": "/iconSkills/docker.png"
+      },
+      {
+        "Name": "Heroku",
+        "Level": 3,
+        "Icon": "/iconSkills/heroku.png"
+      },
+      {
+        "Name": "Postman",
+        "Level": 5,
+        "Icon": "/iconSkills/postman.png"
+      },
+      {
+        "Name": "Swagger",
+        "Level": 4,
+        "Icon": "/iconSkills/swagger.png"
+      },
+      {
+        "Name": "Linux",
+        "Level": 3,
+        "Icon": "/iconSkills/linux.png"
+      },
+      {
+        "Name": "Windows",
+        "Level": 5,
+        "Icon": "/iconSkills/windows.png"
+      } 
+
     ]
   }
 }

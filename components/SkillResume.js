@@ -1,4 +1,4 @@
-import { Avatar, Grid, List, ListItem, ListItemAvatar, ListItemText, Rating, Typography } from "@mui/material";
+import { Avatar, Container, Grid, List, ListItem, ListItemAvatar, ListItemText, Rating, Typography } from "@mui/material";
 
 import FolderIcon from '@mui/icons-material/Folder';
 
@@ -11,30 +11,33 @@ import Image from "next/image";
 export default function SkillResume({skill}) {
 
   return (
-    <Grid item xs={12} md={6}>
+    <Container>
       <Typography sx={{ mt: 2}} variant="h6" component="div">
         {skill.title}
       </Typography>
-     
-      <List>
+      <Grid container spacing={1}>
         {
           skill.skills.map((i) => {
             return (
-              <ListItem key={i.Name}>
-                <ListItemAvatar>
-                  <Avatar sx={{background: 'transparent'}}>
-                    <Image src={i.Icon} alt={i.Name} width={30} height={30} />
-                  </Avatar>
-                </ListItemAvatar>
-                <ListItemText
-                  primary={i.Name}
-                  secondary= {<Rating name="size-small" defaultValue={i.Level} size="small" />}
-                />
-              </ListItem>
+              <Grid item xs={12} sm={6} md={3}>
+                <ListItem key={i.Name} sx={{padding: 0}}>
+                  <ListItemAvatar>
+                    <Avatar sx={{background: 'transparent'}}>
+                      <Image src={i.Icon} alt={i.Name} width={20} height={20} />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText
+                    primary={i.Name}
+                    secondary= {<Rating name="size-small" defaultValue={i.Level} size="small" readOnly />}
+                    primaryTypographyProps={{fontSize: 14}}
+                    secondaryTypographyProps={{fontSize: 12}}
+                  />
+                </ListItem>
+              </Grid>
             )
           })
         }
-      </List>
-    </Grid>
+      </Grid>
+    </Container>
   )
 }
