@@ -13,7 +13,8 @@ export default function PersonalDate({data, lang, idiom}) {
   return (
     <Grid item className={styles.personalDate} xs={12} sm={4} md={3}>
       <div className={styles.contentImageProfile}>
-        <Image className={styles.imageProfile} src="/profile.jpg" alt="profile" width={200} height={200} />
+        <Image className={styles.imageProfile} src="https://github.com/fdcrespi/CV/blob/main/public/profile.jpg?raw=true" alt="profile" width={200} height={200} /> 
+        {/* <img className={styles.imageProfile} src="https://github.com/fdcrespi/CV/blob/main/public/profile.jpg?raw=true" alt="profile" width={200} height={200} /> */}
       </div>
       <div className={styles.contentDate}>
         <Typography variant="h5" component="div" gutterBottom sx={{marginBottom: 0}}>

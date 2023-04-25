@@ -22,7 +22,7 @@ export default function SkillResume({skill}) {
               <Grid item xs={6} sm={6} md={3} key={i.name}>
                 <ListItem key={i.Name} sx={{padding: 0}}>
                   <Avatar sx={{background: 'transparent'}}>
-                    <Image src={i.Icon} alt={i.Name} width={20} height={20} />
+                    <Image src={`https://github.com/fdcrespi/CV/blob/main/public${i.Icon}?raw=true`} alt={i.Name} width={20} height={20} />
                   </Avatar>
                   <ListItemText
                     primary={i.Name}
