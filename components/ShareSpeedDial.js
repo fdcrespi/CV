@@ -10,12 +10,28 @@ import ShareIcon from '@mui/icons-material/Share';
 import Link from 'next/link';
 import styles from '@/styles/Home.module.css';
 
+const handleClick = () => {
+  if (navigator.share) {
+    navigator.share({
+      title: 'CV',
+      text: 'CV',
+      url: 'https://fdcrespi.github.io/CV/',
+    })
+      .then(() => console.log('Successful share'))
+      .catch((error) => console.log('Error sharing', error));
+  }
+};
+
+/* { icon: <FileCopyIcon />, name: 'Copy' },
+{ icon: <SaveIcon />, name: 'Save' }, */
 const actions = [
-  { icon: <FileCopyIcon />, name: 'Copy' },
-  { icon: <SaveIcon />, name: 'Save' },
   { 
     icon: <Link href="javascript:window.print()" className={styles.buttonPrint}><PrintIcon /></Link>, 
     name: 'Print' 
+  },
+  {
+    icon: <ShareIcon onClick={handleClick} />,
+    name: 'Share'
   }
 ];
 
