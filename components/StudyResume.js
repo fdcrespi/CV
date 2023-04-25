@@ -27,18 +27,18 @@ export default function StudyResume({study}) {
             <TimelineDot />
             <TimelineConnector />
           </TimelineSeparator>
-          <TimelineContent sx={{ flex: 'none' }}>
+          <TimelineContent>
               <Grid container>
                 <Grid sx={{marginRight: 2}}>
                   {item.Date}
                 </Grid>
                 <Grid container sx={{display: 'flex', flexDirection: 'column'}}>
-                    <Typography variant="body2"  sx={{fontWeight: 'bold'}}>
-                      {item.Name}
-                    </Typography>
-                    <Typography variant="body2" >
-                      {item.Institution}
-                    </Typography>
+                  <Typography variant="body2" sx={{fontWeight: 'bold'}}>
+                    {item.Name}
+                  </Typography>
+                  <Typography variant="body2" >
+                    {item.Institution}
+                  </Typography>
                 </Grid>
               </Grid>
           </TimelineContent>

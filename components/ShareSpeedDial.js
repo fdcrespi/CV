@@ -45,7 +45,7 @@ const actions = [
 
 export default function ShareSpeedDial() {
   return (
-    <Box sx={{ height: '100vh', transform: 'translateZ(0px)', flexGrow: 1, zIndex: 1 }} className={styles.ShareSpeedDial}>
+    <Box className={styles.ShareSpeedDial}>
       <SpeedDial
         ariaLabel="SpeedDial basic example"
         sx={{ position: 'fixed', bottom: 16, right: 20 }}
