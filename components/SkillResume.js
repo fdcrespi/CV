@@ -19,7 +19,7 @@ export default function SkillResume({skill}) {
         {
           skill.skills.map((i) => {
             return (
-              <Grid item xs={6} sm={6} md={3}>
+              <Grid item xs={6} sm={6} md={3} key={i.name}>
                 <ListItem key={i.Name} sx={{padding: 0}}>
                   <Avatar sx={{background: 'transparent'}}>
                     <Image src={i.Icon} alt={i.Name} width={20} height={20} />

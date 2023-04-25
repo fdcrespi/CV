@@ -33,7 +33,8 @@ export default function Home(props) {
 
 
 export async function getStaticProps({ locale }) {
-  const response = await import(`../../lang/${locale}.json`)
+  
+  const response = await import(`../../lang/es.json`)
 
   return {
     props: {

@@ -2,14 +2,12 @@
   "name": "cv",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://fdcrespi.github.io/CV",
   "scripts": {
-    "deploy": "npm run build && gh-pages -d out",
+    "deploy": "npm run build",
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next buildt",
     "start": "next start",
-    "lint": "next lint",
-    "export": "next export"
+    "lint": "next lint"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
