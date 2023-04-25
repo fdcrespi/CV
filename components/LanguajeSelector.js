@@ -1,14 +1,14 @@
 import { MenuItem, Select } from "@mui/material";
-import { useRouter } from "next/router";
 import styles from "@/styles/LanguajeSelector.module.css";
+import { useState } from "react";
 
+export default function LanguajeSelector({changeLange, lang}) {
 
-export default function LanguajeSelector(data) {
-
-  const router = useRouter();
+  const [label, setLabel] = useState(lang);
 
   const handleChange = (e) => {
-    router.push(router.pathname, router.pathname, { locale: e.target.value });
+    setLabel(e.target.value);
+    changeLange(e.target.value);
   };
 
   return (
@@ -16,8 +16,7 @@ export default function LanguajeSelector(data) {
       className={styles.selectIdiom}
       labelId="demo-select-small-label"
       id="demo-select-small"
-      value={data.data === "English" ? "en" : "es"}
-      label={data.data === "English" ? "English" : "Español"}
+      value={label}
       onChange={handleChange}
       size="small"
       sx={{ 
@@ -45,8 +44,8 @@ export default function LanguajeSelector(data) {
         
       }}
     >
-      <MenuItem value="en">English</MenuItem>
-      <MenuItem value="es">Español</MenuItem>
+      <MenuItem value="English">English</MenuItem>
+      <MenuItem value="Español">Español</MenuItem>
     </Select>
   );
 }

@@ -7,24 +7,36 @@ import PersonalDate from '../../components/PersonalDate'
 import Resume from '../../components/Resume'
 import { Grid } from '@mui/material'
 import ShareSpeedDial from '../../components/ShareSpeedDial'
-
-
-const inter = Inter({ subsets: ['latin'] })
+import { useState } from 'react'
 
 export default function Home(props) {
   const { data } = props;
+  const [languaje, setLanguaje] = useState(data);
+
+  const changeLange = async (lang) => {
+    if (lang === "English") {
+      const response = await import(`../../lang/en.json`) 
+      setLanguaje(response.default);
+      return;
+    }
+    const response = await import(`../../lang/es.json`)
+    setLanguaje(response.default);
+  }
+
+
+
   return (
     <>
       <Head>
-        <title>{`CV - ${data.personalDate.Name}`}</title>
-        <meta name="description" content={`CV - ${data.personalDate.Name}`} />
+        <title>{`CV - ${languaje.personalDate.Name}`}</title>
+        <meta name="description" content={`CV - ${languaje.personalDate.Name}`} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Grid container className={styles.main}>
-        <LanguajeSelector data={data.Idiom} />
-        <PersonalDate data={data.personalDate} lang={data.languajes} idiom={data.Idiom} />
-        <Resume name={data.personalDate.Name} resume={data.ResumeStudy} study={data.Education} works={data.Job} skill={data.skill}/>
+        <LanguajeSelector changeLange={changeLange} lang={languaje.Idiom} />
+        <PersonalDate data={languaje.personalDate} lang={languaje.languajes} idiom={languaje.Idiom} />
+        <Resume name={languaje.personalDate.Name} resume={languaje.ResumeStudy} study={languaje.Education} works={languaje.Job} skill={languaje.skill}/>
         <ShareSpeedDial />
       </Grid>
     </>
@@ -32,7 +44,7 @@ export default function Home(props) {
 }
 
 
-export async function getStaticProps({ locale }) {
+export async function getStaticProps() {
   
   const response = await import(`../../lang/es.json`)
 
