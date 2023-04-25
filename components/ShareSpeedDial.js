@@ -13,8 +13,8 @@ import styles from '@/styles/Home.module.css';
 const handleClick = () => {
   if (navigator.share) {
     navigator.share({
-      title: 'CV',
-      text: 'CV',
+      title: 'CV - Crespi Federico',
+      text: 'CV - Crespi Federico',
       url: 'https://fdcrespi.github.io/CV/',
     })
       .then(() => console.log('Successful share'))
