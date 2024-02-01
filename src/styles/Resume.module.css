@@ -9,8 +9,11 @@
 @media print {
   .resumeDate {
     height: auto;
+    width: 100vw;
     background-color: rgb(var(--background-start-rgb));
     overflow: hidden;
-    grid-row: 1 / 4 !important;
+    /* grid-row: 1 / 4 !important; */
+    order: 2;
   }
+
 }

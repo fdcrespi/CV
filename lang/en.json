@@ -51,9 +51,14 @@
     "title": "Work Experience",
     "jobs": [
       {
+        "Name": "Systems Consultant",
+        "Institution": "MILAR Agro Tech",
+        "Date": "02/2022 - Present"
+      },
+      {
         "Name": "Full Stack Web Developer",
         "Institution": "CELTA - Tres Arroyos",
-        "Date": "07/2022 - 2023"
+        "Date": "07/2022 - Present"
       },
       {
         "Name": "HR administrative",
@@ -102,7 +107,7 @@
       },
       {
         "Name": "Nodejs",
-        "Level": 3,
+        "Level": 4,
         "Icon": "/iconSkills/nodejs.png"
       },
       {
@@ -122,7 +127,7 @@
       },
       {
         "Name": "Express",
-        "Level": 2,
+        "Level": 3,
         "Icon": "/iconSkills/express.png"
       },
       {

@@ -41,7 +41,7 @@ export default function LanguajeSelector({changeLange, lang}) {
           backgroundColor: "white",
           color: "black",
         }
-        
+  
       }}
     >
       <MenuItem value="English">English</MenuItem>

@@ -27,11 +27,11 @@ const handleClick = () => {
 const actions = [
   { 
     icon: <Link href="javascript:window.print()" className={styles.buttonPrint}><PrintIcon /></Link>, 
-    name: 'Print' 
+
   },
   {
     icon: <ShareIcon onClick={handleClick} />,
-    name: 'Share'
+ 
   }
 ];
 
@@ -45,7 +45,7 @@ const actions = [
 
 export default function ShareSpeedDial() {
   return (
-    <Box className={styles.ShareSpeedDial}>
+    <Box className={styles.ShareSpeedDial} id="option-plus">
       <SpeedDial
         ariaLabel="SpeedDial basic example"
         sx={{ position: 'fixed', bottom: 16, right: 20 }}
@@ -53,7 +53,7 @@ export default function ShareSpeedDial() {
       >
         {actions.map((action) => (
           <SpeedDialAction
-            key={action.name}
+            key={action.icon}
             icon={action.icon}
             tooltipTitle={action.name}
           />

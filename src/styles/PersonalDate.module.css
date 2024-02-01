@@ -34,6 +34,9 @@
   .personalDate {
     background-color: rgb(var(--background-start-rgb));
     color: rgb(var(--foreground-rgb));
-    grid-row: 1 / 4 !important;
+   /*  grid-row: 1 / 4 !important; */
+    order: 1;
+    display: flex;
+    align-items: center;
   }
 }

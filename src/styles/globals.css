@@ -118,4 +118,12 @@ a {
     background: rgb(var(--background-start-rgb));
     overflow: hidden;
   }
+
+  #demo-select-small {
+    display: none;
+  }
+
+  #option-plus {
+    display: none;
+  }
 }

@@ -7,7 +7,7 @@ import SkillResume from './SkillResume'
 
 export default function Resume({name, resume, study, works, skill}) {
   return (
-    <Grid item className={styles.resumeDate} xs={12} sm={8} md={9}>
+    <Grid item className={styles.resumeDate} xs={12} sm={8} md={9} sx={{padding: 0}}>
       <HeaderResume name={name} resume={resume} />
       <Divider />
       <StudyResume study={study} />
