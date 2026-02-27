@@ -36,7 +36,7 @@ export default function Home(props) {
       <Grid container className={styles.main}>
         <LanguajeSelector changeLange={changeLange} lang={languaje.Idiom} />
         <PersonalDate data={languaje.personalDate} lang={languaje.languajes} idiom={languaje.Idiom} />
-        <Resume name={languaje.personalDate.Name} resume={languaje.ResumeStudy} study={languaje.Education} works={languaje.Job} skill={languaje.skill}/>
+        <Resume name={languaje.personalDate.Name} resume={languaje.ResumeStudy} study={languaje.Education} works={languaje.Job} skill={languaje.skill} projects={languaje.projects} />
         <ShareSpeedDial />
       </Grid>
     </>

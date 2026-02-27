@@ -51,12 +51,17 @@
     "title": "Experiencia Laboral",
     "jobs": [
       {
-        "Name": "Consultor de sistemas",
+        "Name": "Programador Senior Full Stack",
         "Institution": "MILAR Agro Tech",
         "Date": "03/2022 - Actualidad"
       },
       {
-        "Name": "Desarrollador Web Full Stack",
+        "Name": "CEO",
+        "Institution": "BITIA",
+        "Date": "02/2024 - Actualidad"
+      },
+      {
+        "Name": "Programador Senior Full Stack",
         "Institution": "CELTA - Tres Arroyos",
         "Date": "2020 - Actualidad"
       },
@@ -77,9 +82,116 @@
       }
     ]
   },
+  "proyects": {
+    "title": "Proyectos",
+    "projects": [
+      {
+        "Name": "Toma de pedidos online",
+        "Description": "Aplicación web para la gestión de pedidos en línea, desarrollada con React, Node.js y MySQL. Permite a los usuarios realizar pedidos de manera sencilla y rápida.",
+        "Technologies": ["React", "Node.js", "MySQL"],
+        "Link": "https://pizzatres.com.ar/"
+      },
+      {
+        "Name": "Venta online de motos y accesorios",
+        "Description": "Aplicación web para la gestión de inventarios, desarrollada con Next.js, Express y PostgreSQL. Permite a los usuarios comprar motos y accesorios de manera sencilla y rápida.",
+        "Technologies": ["Next.js", "Express", "PostgreSQL"],
+        "Link": "https://uzcuduncoffeeride.com.ar/"
+      },
+      {
+        "Name": "Gestión para inmobiliaria",
+        "Description": "Aplicación web para la gestión de propiedades en una inmobiliaria, desarrollada con React, Node.js y MySQL. Permite a los usuarios buscar y filtrar propiedades de manera sencilla y rápida.",
+        "Technologies": ["React", "Node.js", "MySQL"],
+        "Link": "https://www.yitanipropiedades.com.ar/"
+      },
+      {
+        "Name": "Portfolio empresarial",
+        "Description": "Aplicación web para la presentación de una empresa, desarrollada con Next.js. Permite a los usuarios conocer los servicios y productos de la empresa de manera sencilla y rápida.",
+        "Technologies": ["Next.js", "Shadcn", "Tailwind CSS"],
+        "Link": "https://www.bitia.com.ar/"
+      },
+      {
+        "Name": "Gestión de torneos de Golf",
+        "Description": "Aplicación para la gestión de torneos de Golf, desarrollada con React, Node.js y MySQL. Permite a los usuarios inscribirse y gestionar torneos de manera sencilla y rápida.",
+        "Technologies": ["React", "Node.js", "MySQL"],
+        "Link": ""
+      },
+      {
+        "Name": "Sistema tactil para impresion de facturas y pago QR",
+        "Description": "Aplicación para la gestión de facturas y pagos QR, desarrollada con Next.js. Permite a los usuarios imprimir facturas y realizar pagos de manera sencilla y rápida.",
+        "Technologies": ["Next.js", "Express", "APIRest"],
+        "Link": ""
+      },
+      {
+        "Name": "Sistema web para el pago de facturas de servicios",
+        "Description": "Aplicación para la gestión de facturas de servicios, desarrollada con Next.js. Permite a los usuarios gestionar facturas y realizar pagos de manera sencilla y rápida.",
+        "Technologies": ["Next.js"],
+        "Link": "https://cajeroenlinea.celtatsas.com.ar/"
+      }
+    ]
+  },
   "skill": {
     "title": "Habilidades",
     "skills": [
+      {
+        "Name": "React",
+        "Level": 2,
+        "Icon": "/iconSkills/react.png"
+      },
+      {
+        "Name": "Nextjs",
+        "Level": 4,
+        "Icon": "/iconSkills/nextjs.png"
+      }, 
+      {
+        "Name": "Nodejs",
+        "Level": 4,
+        "Icon": "/iconSkills/nodejs.png"
+      },
+      {
+        "Name": "MySQL",
+        "Level": 4,
+        "Icon": "/iconSkills/mysql.png"
+      },
+      {
+        "Name": "Firebase",
+        "Level": 3,
+        "Icon": "/iconSkills/firebase.png"
+      },   
+      {
+        "Name": "MongoDB",
+        "Level": 2,
+        "Icon": "/iconSkills/mongodb.png"
+      },
+      {
+        "Name": "Git",
+        "Level": 4,
+        "Icon": "/iconSkills/git.png"
+      },
+      {
+        "Name": "GitHub",
+        "Level": 3,
+        "Icon": "/iconSkills/github.png"
+      },
+      {
+        "Name": "Docker",
+        "Level": 3,
+        "Icon": "/iconSkills/docker.png"
+      },
+      {
+        "Name": "Shadcn",
+        "Level": 3,
+        "Icon": "/iconSkills/shadcn.webp"
+      },
+      {
+        "Name": "Tailwind CSS",
+        "Level": 3,
+        "Icon": "/iconSkills/tailwindcss.png"
+      },
+      {
+        "Name": "Material UI",
+        "Level": 3,
+        "Icon": "/iconSkills/materialui.png"
+      },
       {
         "Name": "HTML",
         "Level": 5,
@@ -106,21 +218,6 @@
         "Icon": "/iconSkills/java.png"
       },
       {
-        "Name": "Nodejs",
-        "Level": 4,
-        "Icon": "/iconSkills/nodejs.png"
-      },
-      {
-        "Name": "React",
-        "Level": 2,
-        "Icon": "/iconSkills/react.png"
-      },
-      {
-        "Name": "Nextjs",
-        "Level": 4,
-        "Icon": "/iconSkills/nextjs.png"
-      },
-      {
         "Name": "Bootstrap",
         "Level": 3,
         "Icon": "/iconSkills/bootstrap.png"
@@ -131,40 +228,11 @@
         "Icon": "/iconSkills/express.png"
       },
       {
-        "Name": "MySQL",
-        "Level": 4,
-        "Icon": "/iconSkills/mysql.png"
-      },
-      {
-        "Name": "Firebase",
-        "Level": 3,
-        "Icon": "/iconSkills/firebase.png"
-      },   
-      {
-        "Name": "MongoDB",
-        "Level": 2,
-        "Icon": "/iconSkills/mongodb.png"
-      },
-      {
         "Name": "Mongoose",
         "Level": 2,
         "Icon": "/iconSkills/mongoose.png"
       },
-      {
-        "Name": "Git",
-        "Level": 4,
-        "Icon": "/iconSkills/git.png"
-      },
-      {
-        "Name": "GitHub",
-        "Level": 3,
-        "Icon": "/iconSkills/github.png"
-      },
-      {
-        "Name": "Docker",
-        "Level": 3,
-        "Icon": "/iconSkills/docker.png"
-      },
+      
       {
         "Name": "Heroku",
         "Level": 3,

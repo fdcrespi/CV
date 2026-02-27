@@ -4,8 +4,9 @@ import HeaderResume from './HeaderResume'
 import StudyResume from './StudyResume'
 import WorkResume from './WorkResume'
 import SkillResume from './SkillResume'
+import ProyectsResume from './ProyectsResume'
 
-export default function Resume({name, resume, study, works, skill}) {
+export default function Resume({name, resume, study, works, skill, projects}) {
   return (
     <Grid item className={styles.resumeDate} xs={12} sm={8} md={9} sx={{padding: 0}}>
       <HeaderResume name={name} resume={resume} />
@@ -13,6 +14,8 @@ export default function Resume({name, resume, study, works, skill}) {
       <StudyResume study={study} />
       <Divider />
       <WorkResume works={works} />
+      <Divider />
+      <ProyectsResume projects={projects} />
       <Divider />
       <SkillResume skill={skill}/>
     </Grid>
