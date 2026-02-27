@@ -87,49 +87,49 @@
     "projects": [
       {
         "Name": "Online order taking",
-        "Description": "Web application for online order management, developed with React, Node.js, and MySQL. It allows users to place orders easily and quickly.",
+        "Description": "It allows users to place orders easily and quickly.",
         "Technologies": ["React", "Node.js", "MySQL"],
         "Link": "https://pizzatres.com.ar/",
         "Image": "/proyects/pizzatres.webp"
       },
       {
         "Name": "Online sale of motorcycles and accessories",
-        "Description": "Web application for inventory management, developed with Next.js, Express, and PostgreSQL. It allows users to buy motorcycles and accessories easily and quickly.",
+        "Description": "It allows users to buy motorcycles and accessories easily and quickly.",
         "Technologies": ["Next.js", "Express", "PostgreSQL"],
         "Link": "https://uzcuduncoffeeride.com.ar/",
         "Image": "/proyects/uzcudun.webp"
       },
       {
         "Name": "Real estate management",
-        "Description": "Web application for real estate property management, developed with React, Node.js, and MySQL. It allows users to search and filter properties easily and quickly.",
+        "Description": "It allows users to search and filter properties easily and quickly.",
         "Technologies": ["React", "Node.js", "MySQL"],
         "Link": "https://www.yitanipropiedades.com.ar/",
         "Image": "/proyects/inmobiliaria.webp"
       },
       {
         "Name": "Business portfolio",
-        "Description": "Web application for presenting a company, developed with Next.js. It allows users to learn about the company's services and products easily and quickly.",
+        "Description": "It allows users to learn about the company's services and products easily and quickly.",
         "Technologies": ["Next.js", "Shadcn", "Tailwind CSS"],
         "Link": "https://www.bitia.com.ar/",
         "Image": "/proyects/bitia.webp"
       },
       {
         "Name": "Golf tournament management",
-        "Description": "Application for managing golf tournaments, developed with React, Node.js, and MySQL. It allows users to register and manage tournaments easily and quickly.",
+        "Description": "It allows users to register and manage tournaments easily and quickly.",
         "Technologies": ["React", "Node.js", "MySQL"],
         "Link": "",
         "Image": "/proyects/golf.webp"
       },
       {
         "Name": "Touch system for invoice printing and QR payment",
-        "Description": "Application for managing invoices and QR payments, developed with Next.js. It allows users to print invoices and make payments easily and quickly.",
+        "Description": "It allows users to print invoices and make payments easily and quickly.",
         "Technologies": ["Next.js", "Express", "APIRest"],
         "Link": "",
         "Image": "/proyects/celta.webp"
       },
       {
         "Name": "Web system for utility bill payment",
-        "Description": "Application for managing utility bills, developed with Next.js. It allows users to manage bills and make payments easily and quickly.",
+        "Description": "It allows users to manage bills and make payments easily and quickly.",
         "Technologies": ["Next.js"],
         "Link": "https://cajeroenlinea.celtatsas.com.ar/",
         "Image": "/proyects/celta.webp"

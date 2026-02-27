@@ -1,15 +1,11 @@
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator } from "@mui/lab";
 
 import HomeRepairServiceIcon from '@mui/icons-material/HomeRepairService';
-import { Grid, Typography } from "@mui/material";
+import { Container, Grid, Typography } from "@mui/material";
 
 export default function WorkResume({works}) {
   return (
-    <Timeline sx={{
-      alignItems: 'flex-start', 
-      marginBottom: 2, 
-      "&::before": {display: 'none'}
-    }}>
+    <Container sx={{ pageBreakInside: 'avoid', padding: 0, my: 2 }}>
 
       <TimelineItem sx={{marginLeft: '-12px', "&::before": {display: 'none'} }}>
         <TimelineSeparator>
@@ -49,6 +45,6 @@ export default function WorkResume({works}) {
         </TimelineItem>
       ))}
 
-    </Timeline>
+    </Container>
   )
 }

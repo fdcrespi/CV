@@ -1,12 +1,12 @@
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator } from "@mui/lab";
 
 import SchoolIcon from '@mui/icons-material/School';
-import { Grid, Typography } from "@mui/material";
+import { Container, Grid, Typography } from "@mui/material";
 
 export default function StudyResume({study}) {
   return (
-    <Timeline sx={{alignItems: 'flex-start', marginBottom: 2 }}>
-
+    <Container sx={{ pageBreakInside: 'avoid', padding: 0, my: 2 }}>
+    
       <TimelineItem sx={{marginLeft: '-12px', "&::before": {display: 'none'}}}>
         <TimelineSeparator>
           <TimelineDot color="primary" variant="outlined">
@@ -44,7 +44,7 @@ export default function StudyResume({study}) {
           </TimelineContent>
         </TimelineItem>
       ))}
-
-    </Timeline>
+    
+    </Container>
   )
 }
