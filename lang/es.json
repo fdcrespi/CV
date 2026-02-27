@@ -118,7 +118,7 @@
         "Description": "Aplicación para la gestión de torneos de Golf, desarrollada con React, Node.js y MySQL. Permite a los usuarios inscribirse y gestionar torneos de manera sencilla y rápida.",
         "Technologies": ["React", "Node.js", "MySQL"],
         "Link": "",
-        "Image": "/proyects/golf.svg"
+        "Image": "/proyects/golf.webp"
       },
       {
         "Name": "Sistema tactil para impresion de facturas y pago QR",

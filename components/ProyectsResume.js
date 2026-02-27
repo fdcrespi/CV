@@ -12,13 +12,13 @@ export default function ProyectsResume({ project }) {
           return (
             <Grid item xs={12} sm={6} md={4} key={i.Name}>
               <Card>
-                <CardMedia>
+                <CardMedia sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: 120 }}>
                   <Image
                     src={`https://github.com/fdcrespi/CV/blob/main/public${i.Image}?raw=true`}
                     alt={i.Name}
-                    width={300}
-                    height={200}
-                    style={{ objectFit: "cover" }}
+                    width={100}
+                    height={100}
+                    style={{ objectFit: "contain", textAlign: "center" }}
                   />
                 </CardMedia>
                 <CardContent>
