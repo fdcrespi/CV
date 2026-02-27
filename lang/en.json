@@ -56,6 +56,11 @@
         "Date": "02/2022 - Present"
       },
       {
+        "Name": "CEO",
+        "Institution": "BITIA",
+        "Date": "02/2024 - Present"
+      },
+      {
         "Name": "Full Stack Web Developer",
         "Institution": "CELTA - Tres Arroyos",
         "Date": "07/2022 - Present"
@@ -77,8 +82,55 @@
       }
     ]
   },
+  "Project": {
+    "title": "Projects",
+    "projects": [
+      {
+        "Name": "Online order taking",
+        "Description": "Web application for online order management, developed with React, Node.js, and MySQL. It allows users to place orders easily and quickly.",
+        "Technologies": ["React", "Node.js", "MySQL"],
+        "Link": "https://pizzatres.com.ar/"
+      },
+      {
+        "Name": "Online sale of motorcycles and accessories",
+        "Description": "Web application for inventory management, developed with Next.js, Express, and PostgreSQL. It allows users to buy motorcycles and accessories easily and quickly.",
+        "Technologies": ["Next.js", "Express", "PostgreSQL"],
+        "Link": "https://uzcuduncoffeeride.com.ar/"
+      },
+      {
+        "Name": "Real estate management",
+        "Description": "Web application for real estate property management, developed with React, Node.js, and MySQL. It allows users to search and filter properties easily and quickly.",
+        "Technologies": ["React", "Node.js", "MySQL"],
+        "Link": "https://www.yitanipropiedades.com.ar/"
+      },
+      {
+        "Name": "Business portfolio",
+        "Description": "Web application for presenting a company, developed with Next.js. It allows users to learn about the company's services and products easily and quickly.",
+        "Technologies": ["Next.js", "Shadcn", "Tailwind CSS"],
+        "Link": "https://www.bitia.com.ar/"
+      },
+      {
+        "Name": "Golf tournament management",
+        "Description": "Application for managing golf tournaments, developed with React, Node.js, and MySQL. It allows users to register and manage tournaments easily and quickly.",
+        "Technologies": ["React", "Node.js", "MySQL"],
+        "Link": ""
+      },
+      {
+        "Name": "Touch system for invoice printing and QR payment",
+        "Description": "Application for managing invoices and QR payments, developed with Next.js. It allows users to print invoices and make payments easily and quickly.",
+        "Technologies": ["Next.js", "Express", "APIRest"],
+        "Link": ""
+      },
+      {
+        "Name": "Web system for utility bill payment",
+        "Description": "Application for managing utility bills, developed with Next.js. It allows users to manage bills and make payments easily and quickly.",
+        "Technologies": ["Next.js"],
+        "Link": "https://cajeroenlinea.celtatsas.com.ar/"
+      }
+    ]
+  },
   "skill": {
-    "title": "Habilidades",
+    "title": "Skills",
     "skills": [
       {
         "Name": "HTML",
@@ -139,16 +191,11 @@
         "Name": "Firebase",
         "Level": 3,
         "Icon": "/iconSkills/firebase.png"
-      },   
+      },
       {
         "Name": "MongoDB",
         "Level": 2,
         "Icon": "/iconSkills/mongodb.png"
-      },
-      {
-        "Name": "Mongoose",
-        "Level": 2,
-        "Icon": "/iconSkills/mongoose.png"
       },
       {
         "Name": "Git",
@@ -164,6 +211,21 @@
         "Name": "Docker",
         "Level": 3,
         "Icon": "/iconSkills/docker.png"
+      },
+      {
+        "Name": "Shadcn",
+        "Level": 3,
+        "Icon": "/iconSkills/shadcn.webp"
+      },
+      {
+        "Name": "Tailwind CSS",
+        "Level": 3,
+        "Icon": "/iconSkills/tailwindcss.png"
+      },
+      {
+        "Name": "Material UI",
+        "Level": 3,
+        "Icon": "/iconSkills/materialui.png"
       },
       {
         "Name": "Heroku",
@@ -189,8 +251,7 @@
         "Name": "Windows",
         "Level": 5,
         "Icon": "/iconSkills/windows.png"
-      } 
-
+      }
     ]
   }
 }

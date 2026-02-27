@@ -82,50 +82,57 @@
       }
     ]
   },
-  "proyects": {
+  "Project": {
     "title": "Proyectos",
     "projects": [
       {
         "Name": "Toma de pedidos online",
         "Description": "Aplicación web para la gestión de pedidos en línea, desarrollada con React, Node.js y MySQL. Permite a los usuarios realizar pedidos de manera sencilla y rápida.",
         "Technologies": ["React", "Node.js", "MySQL"],
-        "Link": "https://pizzatres.com.ar/"
+        "Link": "https://pizzatres.com.ar/",
+        "Image": "/proyects/pizzatres.webp"
       },
       {
         "Name": "Venta online de motos y accesorios",
         "Description": "Aplicación web para la gestión de inventarios, desarrollada con Next.js, Express y PostgreSQL. Permite a los usuarios comprar motos y accesorios de manera sencilla y rápida.",
         "Technologies": ["Next.js", "Express", "PostgreSQL"],
-        "Link": "https://uzcuduncoffeeride.com.ar/"
+        "Link": "https://uzcuduncoffeeride.com.ar/",
+        "Image": "/proyects/uzcudun.webp"
       },
       {
         "Name": "Gestión para inmobiliaria",
         "Description": "Aplicación web para la gestión de propiedades en una inmobiliaria, desarrollada con React, Node.js y MySQL. Permite a los usuarios buscar y filtrar propiedades de manera sencilla y rápida.",
         "Technologies": ["React", "Node.js", "MySQL"],
-        "Link": "https://www.yitanipropiedades.com.ar/"
+        "Link": "https://www.yitanipropiedades.com.ar/",
+        "Image": "/proyects/inmobiliaria.webp"
       },
       {
         "Name": "Portfolio empresarial",
         "Description": "Aplicación web para la presentación de una empresa, desarrollada con Next.js. Permite a los usuarios conocer los servicios y productos de la empresa de manera sencilla y rápida.",
         "Technologies": ["Next.js", "Shadcn", "Tailwind CSS"],
-        "Link": "https://www.bitia.com.ar/"
+        "Link": "https://www.bitia.com.ar/",
+        "Image": "/proyects/bitia.webp"
       },
       {
         "Name": "Gestión de torneos de Golf",
         "Description": "Aplicación para la gestión de torneos de Golf, desarrollada con React, Node.js y MySQL. Permite a los usuarios inscribirse y gestionar torneos de manera sencilla y rápida.",
         "Technologies": ["React", "Node.js", "MySQL"],
-        "Link": ""
+        "Link": "",
+        "Image": "/proyects/golf.svg"
       },
       {
         "Name": "Sistema tactil para impresion de facturas y pago QR",
         "Description": "Aplicación para la gestión de facturas y pagos QR, desarrollada con Next.js. Permite a los usuarios imprimir facturas y realizar pagos de manera sencilla y rápida.",
         "Technologies": ["Next.js", "Express", "APIRest"],
-        "Link": ""
+        "Link": "",
+        "Image": "/proyects/celta.webp"
       },
       {
         "Name": "Sistema web para el pago de facturas de servicios",
         "Description": "Aplicación para la gestión de facturas de servicios, desarrollada con Next.js. Permite a los usuarios gestionar facturas y realizar pagos de manera sencilla y rápida.",
         "Technologies": ["Next.js"],
-        "Link": "https://cajeroenlinea.celtatsas.com.ar/"
+        "Link": "https://cajeroenlinea.celtatsas.com.ar/",
+        "Image": "/proyects/celta.webp"
       }
     ]
   },
