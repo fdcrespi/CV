@@ -3,15 +3,15 @@ import Image from "next/image";
 
 export default function ProyectsResume({ project }) {
   return (
-    <Container sx={{ padding: 0 }}>
+    <Container sx={{ padding: 0, mb: 4 }}>
       <Typography sx={{ mt: 2, mb: 2 }} variant="h5" component="div" align="center">
         Proyectos
       </Typography>
-      <Grid container spacing={3}>
+      <Grid container spacing={3} sx={{ '@media print': { display: 'flex', flexDirection: 'row', alignItems: 'center' } }}>
         {project.projects.map((i) => {
           return (
             <Grid item xs={12} sm={6} md={4} key={i.Name}>
-              <Card>
+              <Card sx={{ pageBreakInside: 'avoid' }}>
                 <CardMedia sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: 120 }}>
                   <Image
                     src={`https://github.com/fdcrespi/CV/blob/main/public${i.Image}?raw=true`}
@@ -37,7 +37,7 @@ export default function ProyectsResume({ project }) {
                       color="primary"
                       href={i.Link}
                       target="_blank"
-                      sx={{ mt: 2 }}
+                      sx={{ mt: 2, '@media print': { display: 'none' } }}
                     >
                       Ver Proyecto
                     </Button>

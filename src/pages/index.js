@@ -33,12 +33,12 @@ export default function Home(props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <Grid container className={styles.main}>
+      <div>
         <LanguajeSelector changeLange={changeLange} lang={languaje.Idiom} />
         <PersonalDate data={languaje.personalDate} lang={languaje.languajes} idiom={languaje.Idiom} />
         <Resume name={languaje.personalDate.Name} resume={languaje.ResumeStudy} study={languaje.Education} works={languaje.Job} skill={languaje.skill} project={languaje.Project} />
         <ShareSpeedDial />
-      </Grid>
+      </div>
     </>
   )
 }

@@ -11,7 +11,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 export default function PersonalDate({data, lang, idiom}) {
 
   return (
-    <Grid item className={styles.personalDate} xs={12} sm={4} md={3}>
+    <Grid item className={styles.personalDate} xs={12} sm={4} md={3} sx={{display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 8}}>
       <div className={styles.contentImageProfile}>
         <Image className={styles.imageProfile} src="https://github.com/fdcrespi/CV/blob/main/public/profile.jpg?raw=true" alt="profile" width={200} height={200} /> 
         {/* <img className={styles.imageProfile} src="https://github.com/fdcrespi/CV/blob/main/public/profile.jpg?raw=true" alt="profile" width={200} height={200} /> */}

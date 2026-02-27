@@ -11,7 +11,7 @@ import Image from "next/image";
 export default function SkillResume({skill}) {
 
   return (
-    <Container sx={{padding: 0}}>
+    <Container sx={{ pageBreakInside: 'avoid', padding: 0, my: 4 }}>
       <Typography sx={{ mt: 2}} variant="h6" component="div">
         {skill.title}
       </Typography>
