@@ -1,38 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CV — Federico Crespi
 
-## Getting Started
+CV personal, estático (HTML + CSS + vanilla JS). Desplegado en GitHub Pages.
 
-First, run the development server:
+## Stack
+- HTML / CSS / JS (sin framework)
+- Roboto Mono (local, variable)
+- Light / dark mode con persistencia
+- Versión impresa optimizada (2 páginas)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## Estructura
+
+```
+index.html              # CV completo en un archivo
+assets/
+  profile.jpg
+  favicon.png / .ico
+  iconSkills/           # Logos de tecnologías (PNG/WEBP)
+  projects/             # Thumbnails de proyectos (WEBP)
+fonts/
+  RobotoMono-VariableFont_wght.ttf
+.github/workflows/
+  pages.yml             # Deploy automático a GitHub Pages
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deploy
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Cada push a `main` publica automáticamente a Pages.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+URL: https://fdcrespi.github.io/CV/
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Desarrollo local
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+No hay build step. Abrí `index.html` en el navegador,
+o levantá un server simple:
 
-## Learn More
+```bash
+python3 -m http.server 8080
+# o
+npx serve .
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Imprimir
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Ctrl/Cmd + P desde el navegador. Diseñado para 2 páginas A4.
